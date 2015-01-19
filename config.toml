@@ -1,4 +1,4 @@
-baseurl = "artpray.ru"
+baseurl = "http://artpray.ru"
 title = "artpray.ru"
 author = "Anton Mamrashev"
 copyright = "Copyright (c) 2014, Anton Mamrashev; all rights reserved."
