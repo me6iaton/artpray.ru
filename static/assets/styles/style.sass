@@ -1,0 +1,107 @@
+@import "separators"
+@import "bootstrap/variables"
+@import "bootstrap/colors"
+@import "bootstrap/theme-artpray"
+@import "bootstrap/timeline"
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap"
+@import "../vendor/materialize/sass/components/variables"
+@import "../vendor/materialize/sass/components/sideNav"
+
+
+// red
+// pink
+// purple
+// deep-purple
+// indigo
+// blue
+// light-blue
+// cyan
+// teal
+// green
+// light-green
+// lime
+// yellow
+// amber
+// orange
+// deep-orange
+// brown blue-grey grey
+
+$light: 300
+$zindex-header: 20 !default
+
+.container
+  max-width: 1000px
+  padding: 0 30px 0 100px
+section
+  padding: 50px 0
+
+#side-nav-toggle
+ position: fixed
+ z-index: $zindex-header
+ margin-left: -90px
+ top: 20px
+ cursor: pointer
+ .fa-circle
+   color: map-get(map-get($colorful, light-green), A700)
+ul.side-nav.full
+  padding: 0px
+  background-color: map-get(map-get($colorful, blue), 400)
+  li
+    list-style-type: none
+    a
+      color: $dark-white
+      &:hover
+        text-decoration: none
+        color: $light-black
+.drag-target
+  margin-top: 100px
+  display: none
+
+header
+  background-color: map-get(map-get($colorful, blue), 500)
+  color: $full-white
+  padding: 30px 0
+  h1
+    font-weight: normal
+    font-size: 34px
+    line-height: 34px
+    margin: 0
+    font-kerning: normal
+    z-index: $zindex-header
+    position: relative
+    img
+      display: none !important
+
+#index
+  background-color: map-get(map-get($colorful, light-blue), $light)
+  section
+    min-height: 400px
+    font-size: 20px
+    font-weight: 300
+    color: $dark-black-0
+    //color: $dark-black
+
+.section-map
+  padding-bottom: 0px
+  .jumbotron
+    margin-top: 30px
+    margin-bottom: 0px !important
+    border-radius: $border-radius-base $border-radius-base 0 0
+    //background-color: map-get(map-get($colorful, lime), 300)
+    background-color: map-get(map-get($colorful, teal), A400)
+    address
+     margin: 0
+.item1
+  background-color: map-get(map-get($colorful, light-blue), $light)
+  padding-top: 80px !important
+.item2
+  background-color: map-get(map-get($colorful, teal), $light)
+.item3
+  background-color: map-get(map-get($colorful, light-green), $light)
+.item4
+  background-color: map-get(map-get($colorful, yellow), $light)
+.item5
+  background-color: map-get(map-get($colorful, orange), $light)
+
+
+
