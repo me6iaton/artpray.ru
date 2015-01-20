@@ -1,0 +1,14 @@
+{{ partial "head.html" . }}
+    <section class="section0">
+      <div class="container">
+        <!--<span id="nav-back" class="fa-stack fa-2x">-->
+          <!--<i class="fa fa-circle fa-stack-2x"></i>-->
+          <!--<i class="fa fa-bars fa-stack-1x fa-inverse"></i>-->
+        <!--</span>-->
+        {{ .Content }}
+        <a href="/">
+          <i id="nav-back" class="fa fa-chevron-circle-left fa-2x"></i>
+        </a>
+      </div>
+    </section>
+{{ partial "footer.html" . }}

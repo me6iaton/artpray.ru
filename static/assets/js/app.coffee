@@ -1,6 +1,8 @@
 $ ->
-  $("#side-nav-toggle").sideNav(edge: 'left')
+  $("#nav-toggle").sideNav(edge: 'left')
 
+  $("#slide-out").click ()->
+    $('#sidenav-overlay').trigger('click')
 #<iframe  width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.1149054108955!2d30.290150134908632!3d60.00583186830716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963414e5ca5c99%3A0xc51f8acc0ee5d8e1!2z0LDQuy4g0J_QvtC70LjQutCw0YDQv9C-0LLQsCwgNtC6Miwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NzM0MQ!5e0!3m2!1sru!2sru!4v1421663380209&scrollwheel=false"></iframe>
 
 

@@ -35,7 +35,9 @@ $zindex-header: 20 !default
 section
   padding: 50px 0
 
-#side-nav-toggle
+//#nav-back
+
+#nav-toggle
  position: fixed
  z-index: $zindex-header
  margin-left: -90px
@@ -72,16 +74,25 @@ header
     img
       display: none !important
 
-#index
+section
+  min-height: 400px
+  font-size: 20px
+  font-weight: 300
+  color: $dark-black-0
+.section0
   background-color: map-get(map-get($colorful, light-blue), $light)
-  section
-    min-height: 400px
-    font-size: 20px
-    font-weight: 300
-    color: $dark-black-0
-    //color: $dark-black
+  padding-top: 80px !important
+.section1
+  background-color: map-get(map-get($colorful, teal), $light)
+.section2
+  background-color: map-get(map-get($colorful, light-green), $light)
+.section3
+  background-color: map-get(map-get($colorful, yellow), $light)
+.section4
+  background-color: map-get(map-get($colorful, orange), $light)
 
-.section-map
+
+#section-map
   padding-bottom: 0px
   .jumbotron
     margin-top: 30px
@@ -90,18 +101,18 @@ header
     //background-color: map-get(map-get($colorful, lime), 300)
     background-color: map-get(map-get($colorful, teal), A400)
     address
-     margin: 0
-.item1
+      margin: 0
+
+#index
   background-color: map-get(map-get($colorful, light-blue), $light)
-  padding-top: 80px !important
-.item2
-  background-color: map-get(map-get($colorful, teal), $light)
-.item3
-  background-color: map-get(map-get($colorful, light-green), $light)
-.item4
-  background-color: map-get(map-get($colorful, yellow), $light)
-.item5
-  background-color: map-get(map-get($colorful, orange), $light)
 
-
-
+body
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+section
+  flex: 1
+footer
+  width: 100%
+  height: 100px
+  background-color: map-get(map-get($colorful, blue), 800)
